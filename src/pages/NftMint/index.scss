@@ -1,0 +1,197 @@
+@import '../../assets/sass/custom.scss';
+
+.custom-nft-container {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.custom-nft-sample {
+    // width: 100px;
+    // height: 100px;
+    margin: 4rem auto;
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 100%;
+        max-width: 300px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        border: 5px solid white;
+    }
+}
+
+.left img {
+    // border-radius: 50% 0 0 50%;
+    border-radius: 50%;
+}
+
+.right img {
+    // border-radius: 0 50% 50% 0;
+    border-radius: 50%;
+}
+
+.custom-nft-mid {
+    // width: 100px;
+    // height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .custom-nft-mid-div {
+        // width: 100px;
+        // height: 100px;
+
+        // margin: 0 3rem;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 5px;
+        padding: 3rem 3rem;
+        background-color: $color-white-1;
+        // height: 100%;
+    }
+
+    .custom-nft-mid-header {
+        // margin-top: 2rem;
+        color: $color-theme-1;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .custom-nft-mint-amount-container {
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        .custom-nft-mint-amount {
+            width: 50%;
+            padding: 8px 20px;
+            font-family: $number-font;
+            text-align: center;
+
+            background-color: transparent;
+            border: 1px solid $color-theme-1;
+            color: $color-black-1;
+
+            &:hover, &:focus {
+                outline: none;
+            }
+        }
+
+        // remove spin-button
+        input[type=number],
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -moz-appearance: textfield;
+            -webkit-appearance: none; 
+        }
+
+        .custom-nft-mint-decrease-spin {
+            border-radius: 20px 0 0 20px;
+            border-width: 1px 0 1px 1px;
+            padding-left: 20px;
+            padding-right: 16px;
+        }
+        .custom-nft-mint-increase-spin {
+            border-radius: 0 20px 20px 0;
+            border-width: 1px 1px 1px 0;
+            padding-left: 16px;
+            padding-right: 20px;
+        }
+
+        .custom-nft-mint-decrease-spin, .custom-nft-mint-increase-spin {
+            display: inline-block;
+            background-color: $color-theme-1 !important;
+            user-select: none;
+            
+            // padding: 8px 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            text-align: center;
+
+            background-color: transparent;
+
+            // border: 1px 1px 1px 0 solid $color-theme-1;
+            border-color: $color-theme-1;
+            border-style: solid;
+            
+
+            color: $color-white-1;
+
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            outline: none !important;
+            cursor: pointer;
+
+            &:hover, &:focus {
+                background: transparent !important;
+                color: $color-theme-1;
+                box-shadow: 0 0 6px #9ecaed;
+            }
+
+            &:disabled {
+                box-shadow: none;
+                color: $color-black-1;
+                background-color:rgba(0, 0, 0, 0.24);
+                border: 1px solid transparent;
+                cursor: initial;
+            }
+        }
+    }
+
+    .custom-nft-mint-button {
+        display: block;
+        border-radius: 50px;
+        width: 80%;
+        padding: .6rem 1.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        text-align: center;
+        user-select: none;
+        
+        background-color: transparent;
+        border: 1px solid $color-theme-1;
+        font-weight: 500;
+        font-size: 14px;
+        color: $color-theme-1;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        outline: none !important;
+        cursor: pointer;
+
+        &:hover, &:focus {
+            background: $color-theme-1;
+            color: $color-white-1;
+            box-shadow: 0 0 6px #9ecaed;
+        }
+
+        &:disabled {
+            // background-color: $color-grey-1;
+            box-shadow: none;
+            color: $color-black-1;
+            background-color:rgba(0, 0, 0, 0.24);
+            border: 1px solid transparent;
+            cursor: initial;
+        }
+    }
+
+    .custom-nft-mint-state-info {
+        color: #ff0000;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+}

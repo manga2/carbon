@@ -1,0 +1,23 @@
+.background-1 {
+    background-image: url('../../assets/img/dark-bg-1.jpg');
+    background-size: cover;
+}
+
+.custom-big-container {
+    padding-top: 2rem;
+}
+
+// html, body {
+//      height: 100%
+// }
+// body {
+//     display: flex;
+//     align-items: stretch;
+// }
+
+#root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

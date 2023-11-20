@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+$font-main: 'Raleway', sans-serif;
+$number-font: 'Nunito', sans-serif;
+
+
+/// colors
+$color-white-1: #fff;
+$color-white-2: #a0a0a0;
+$color-grey-1: #545454;
+$color-green-1: #00F69E;
+$color-green-2: #00ffa6;
+$color-blue-1: #1F58F2;
+$color-black-0: #101010;
+$color-black-1: #3B566E;
+$color-black-2: #40474e;
+$color-theme-1: #0EB8D9;
+
+/// font-size
+$font-title-size-1: 2.2rem;
+$font-button-size-1: 1.2rem;
+
+///////////////////////////////////////////////////////////////@at-root
+
+* {
+    font-family: $font-main;
+}
+
+.custom-link-button {
+    text-decoration: none !important;
+
+    &:hover, &:focus {
+        text-decoration: none !important;
+    }
+}
